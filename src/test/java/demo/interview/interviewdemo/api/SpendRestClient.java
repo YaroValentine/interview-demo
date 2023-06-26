@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Assertions;
 import java.io.IOException;
 
 public class SpendRestClient extends BaseRestClient {
+
     private final SpendService spendService = retrofit.create(SpendService.class);
 
     public SpendRestClient() {
