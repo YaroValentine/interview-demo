@@ -76,10 +76,26 @@ dependencies {
     testImplementation "io.grpc:grpc-stub:${grpcVersion}"
     testImplementation "io.grpc:grpc-netty:${grpcVersion}"
     testImplementation "com.google.protobuf:protobuf-java:${protobufVersion}"
+    testImplementation 'org.projectlombok:lombok:1.18.26'
     compileOnly 'jakarta.annotation:jakarta.annotation-api:1.3.5' // Java 9+ compatibility - Do NOT update to 2.0.0
     // SOAP
     testImplementation 'com.sun.xml.messaging.saaj:saaj-impl:3.0.1'
     implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+    // Extras
+    testImplementation 'org.apache.poi:poi-ooxml:5.2.2'
+    testImplementation 'org.codehaus.jackson:jackson-core-asl:1.9.13'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'com.codeborne:xls-test:1.7.0'
+    testImplementation 'com.codeborne:pdf-test:1.7.0'
+    testImplementation 'com.opencsv:opencsv:5.6'
+    testImplementation 'com.google.code.gson:gson:2.9.0'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.13.2'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2.1'
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+    testImplementation 'io.rest-assured:json-path:5.3.0'
+
+//    compileOnly 'org.projectlombok:lombok:1.18.22'
+//    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 test {

@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ReqresTests {
+
     ReqresRestClient client = new ReqresRestClient();
 
     @Test
@@ -29,8 +30,6 @@ public class ReqresTests {
 
     @Test
     void successRegistrationTest() {
-        ReqresRestClient client = new ReqresRestClient();
-
         int id = 4;
         String token = "QpwL5tke4Pnpja7X4";
 
